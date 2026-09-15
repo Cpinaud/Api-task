@@ -12,7 +12,7 @@ function guardarTareas(tareas) {
   fs.writeFileSync(dataPath, JSON.stringify(tareas, null, 2));
 }
 
-function getTasks(req, res) {
+function getTasks(req,res){
   const tareas = leerTareas();
   res.json(tareas);
 }
