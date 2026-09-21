@@ -1,4 +1,5 @@
-<<<<API Tasks>>>
+**API Tasks**
+
 Estado: En Desarrollo
 
 CRUD de tareas que se graban en un json
@@ -32,5 +33,5 @@ Próximos pasos:
 - Validación más robusta en los inputs (tipo y formato, no solo presencia)
 - Nodemon como dependencia de desarrollo (reinicio automático del servidor)
 - Revisión de códigos de status HTTP en todas las respuestas
-- Filtros/query params en GET /tasks (ej: ?completed=true)
+- Filtros/query params en GET /tasks (ej: completed=true)
 - Tests básicos (node --test o jest)
