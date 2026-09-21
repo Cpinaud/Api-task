@@ -1,6 +1,5 @@
 const fs = require('fs');
 const path = require('path');
-
 const dataPath = path.join(__dirname, '..', 'data', 'tasks.json');
 
 function leerTareas() {
@@ -31,10 +30,6 @@ function getTaskById(req, res) {
 
 function createTask(req, res) {
   const { title } = req.body;
-
-  if (!title) {
-    return res.status(400).json({ error: 'El campo title es obligatorio' });
-  }
 
   const tareas = leerTareas();
 
